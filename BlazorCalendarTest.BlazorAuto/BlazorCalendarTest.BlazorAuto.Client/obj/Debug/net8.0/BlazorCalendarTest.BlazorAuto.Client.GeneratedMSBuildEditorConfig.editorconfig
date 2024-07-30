@@ -1,0 +1,47 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorCalendarTest.BlazorAuto.Client
+build_property.RootNamespace = BlazorCalendarTest.BlazorAuto.Client
+build_property.ProjectDir = /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/Components/EventEditor.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FdmVudEVkaXRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/Components/EventEditorModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FdmVudEVkaXRvck1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/Components/MonthlyCalendar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Nb250aGx5Q2FsZW5kYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/Pages/CalendarNew.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FsZW5kYXJOZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/Pages/MonthView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTW9udGhWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

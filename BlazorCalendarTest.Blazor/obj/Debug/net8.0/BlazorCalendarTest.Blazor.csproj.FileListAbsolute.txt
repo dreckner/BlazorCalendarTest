@@ -1,0 +1,6 @@
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.csproj.AssemblyReference.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.AssemblyInfoInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.AssemblyInfo.cs
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Blazor/obj/Debug/net8.0/BlazorCalendarTest.Blazor.MvcApplicationPartsAssemblyInfo.cache

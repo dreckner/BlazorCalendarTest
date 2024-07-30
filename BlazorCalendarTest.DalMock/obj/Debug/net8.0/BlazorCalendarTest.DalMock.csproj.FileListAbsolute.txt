@@ -1,0 +1,15 @@
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/bin/Debug/net8.0/BlazorCalendarTest.DalMock.deps.json
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/bin/Debug/net8.0/BlazorCalendarTest.DalMock.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/bin/Debug/net8.0/BlazorCalendarTest.DalMock.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/bin/Debug/net8.0/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/bin/Debug/net8.0/BlazorCalendarTest.Dal.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.csproj.AssemblyReference.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.AssemblyInfoInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.AssemblyInfo.cs
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCa.75A4DBCE.Up2Date
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/refint/BlazorCalendarTest.DalMock.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/BlazorCalendarTest.DalMock.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Debug/net8.0/ref/BlazorCalendarTest.DalMock.dll

@@ -1,0 +1,11 @@
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/bin/Release/net8.0/BlazorCalendarTest.Dal.deps.json
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/bin/Release/net8.0/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/bin/Release/net8.0/BlazorCalendarTest.Dal.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.AssemblyInfoInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.AssemblyInfo.cs
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/refint/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/BlazorCalendarTest.Dal.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Release/net8.0/ref/BlazorCalendarTest.Dal.dll

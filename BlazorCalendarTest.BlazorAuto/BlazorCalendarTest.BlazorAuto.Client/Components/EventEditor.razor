@@ -1,0 +1,85 @@
+@using Csla.Blazor
+
+
+@if(editItem != null)
+{
+    <h5> Event Edit</h5>
+    <form>
+    <div class="form-group">
+        <label for="eventId" class="form-label">Event ID</label>
+        <input type="text" class="form-control" id="eventId" @bind="editItem.Id" disabled />
+    </div>
+    <div class="form-group">
+        <label for="eventStatus" class="form-label">Status</label>
+        <select class="form-select" id="eventStatus" @bind="editItem.Status" >
+            <option value="OnHold" >OnHold</option>
+            <option value="Booked" >Booked</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" @bind="editItem.Title" />
+    </div>
+    <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" @bind="editItem.Description" rows="3" />
+    </div>
+    <div class="form-group">
+        <label for="start" class="form-label">Start</label>
+        <input type=date class="form-control" id="start" @bind="editItem.StartDate" />
+    </div>
+    <div class="form-group">
+        <label for="end" class="form-label">End</label>
+        <input type=date class="form-control" id="end" @bind="editItem.EndDate" />
+    </div>
+    <div class="form-group">
+        <label for="eventTypeId" class="form-label">Event Type</label>
+        <select class="form-select" id="eventTypeId" @bind="editItem.EventTypeId">
+            @if(eventTypeInfoList is not null)
+            {
+                <option value=0>Select an Event Type</option>
+                @foreach (var item in eventTypeInfoList)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+            else
+            {
+                <option value=0>Loading...</option>
+            }
+            
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="eventSpaceId" class="form-label">Event Space</label>
+        <select class="form-select" id="eventSpaceId" @bind="editItem.EventSpaceId">
+            @if(eventSpaceInfoList is not null)
+            {
+                <option value=0>Select an Event Space</option>
+                @foreach (var item in eventSpaceInfoList)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+            else
+            {
+                <option value=0>Loading...</option>
+            }
+        </select>
+    </div>
+</form>
+    
+}
+
+@code {
+    [Parameter]
+    public EventEdit? editItem { get; set; }
+
+    [Parameter]
+    public EventTypeInfoList? eventTypeInfoList { get; set; }
+
+    [Parameter]
+    public EventSpaceInfoList? eventSpaceInfoList { get; set; }
+    
+
+}

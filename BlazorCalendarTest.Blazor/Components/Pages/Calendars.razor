@@ -1,0 +1,40 @@
+@page "/calendars"
+
+
+@inject IDataPortal<CalendarInfoList> calendarInfoListDataPortal
+@inject ViewModel<CalendarInfoList> vm
+
+<h1>Calendars</h1>
+
+@if(vm.Model == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Calendar Name</th>
+                <th>Calendar Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var calendarInfo in vm.Model)
+            {
+                <tr>
+                    <td>@calendarInfo.Name</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await vm.RefreshAsync(() => calendarInfoListDataPortal.FetchAsync());
+    }
+}

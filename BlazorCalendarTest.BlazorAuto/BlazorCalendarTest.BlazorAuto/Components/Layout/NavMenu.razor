@@ -1,0 +1,50 @@
+﻿﻿@using BlazorCalendarTest.BusinessLibrary
+
+@inject Csla.IDataPortal<CalendarInfoList> calendarInfoListDataPortal
+
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Calendar Demo</a>
+        <button class="navbar-toggler @NavButtonCssClass" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-label="Toggle navigation" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse @NavBarCssClass" id="navbarCollapse" @onclick="ToggleNavMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Calendar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><NavLink class="dropdown-item" href=@("monthview/1") >Calendar 1</NavLink></li>
+                        <li><NavLink class="dropdown-item" href=@("monthview/2") >Calendar 2</NavLink></li>      
+                       
+                        
+                    </ul>  
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+    private string? NavBarCssClass => collapseNavMenu ? null : "show";
+    private string? NavButtonCssClass => collapseNavMenu ? "collapsed" : null;
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    
+    // add Calendar list to the NavMenu
+
+    private CalendarInfoList? calendarList   { get;set;  }
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        calendarList = await calendarInfoListDataPortal.FetchAsync();
+    }
+    
+
+}
+   

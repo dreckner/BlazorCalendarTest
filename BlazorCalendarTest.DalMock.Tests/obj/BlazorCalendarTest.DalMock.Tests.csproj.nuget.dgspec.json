@@ -1,0 +1,263 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/BlazorCalendarTest.DalMock.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj",
+        "projectName": "BlazorCalendarTest.Dal",
+        "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj",
+        "packagesPath": "/home/davidreckner/.nuget/packages/",
+        "outputPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidreckner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/BlazorCalendarTest.DalMock.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/BlazorCalendarTest.DalMock.Tests.csproj",
+        "projectName": "BlazorCalendarTest.DalMock.Tests",
+        "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/BlazorCalendarTest.DalMock.Tests.csproj",
+        "packagesPath": "/home/davidreckner/.nuget/packages/",
+        "outputPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidreckner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj": {
+                "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj"
+              },
+              "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/BlazorCalendarTest.DalMock.csproj": {
+                "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/BlazorCalendarTest.DalMock.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Csla": {
+              "target": "Package",
+              "version": "[8.2.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/BlazorCalendarTest.DalMock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/BlazorCalendarTest.DalMock.csproj",
+        "projectName": "BlazorCalendarTest.DalMock",
+        "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/BlazorCalendarTest.DalMock.csproj",
+        "packagesPath": "/home/davidreckner/.nuget/packages/",
+        "outputPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/davidreckner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj": {
+                "projectPath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Csla": {
+              "target": "Package",
+              "version": "[8.2.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.6, 8.0.6]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

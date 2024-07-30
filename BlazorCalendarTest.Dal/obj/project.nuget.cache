@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YjDxU3AFRwc=",
+  "success": true,
+  "projectFilePath": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/BlazorCalendarTest.Dal.csproj",
+  "expectedPackageFiles": [
+    "/home/davidreckner/.nuget/packages/microsoft.netcore.app.ref/8.0.6/microsoft.netcore.app.ref.8.0.6.nupkg.sha512",
+    "/home/davidreckner/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

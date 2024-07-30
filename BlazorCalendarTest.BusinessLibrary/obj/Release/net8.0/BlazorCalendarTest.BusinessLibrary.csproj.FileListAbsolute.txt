@@ -1,0 +1,17 @@
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.BusinessLibrary.deps.json
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.BusinessLibrary.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.BusinessLibrary.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.DalMock.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.Dal.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/bin/Release/net8.0/BlazorCalendarTest.DalMock.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.csproj.AssemblyReference.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.AssemblyInfoInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.AssemblyInfo.cs
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCa.C6CEC8D7.Up2Date
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/refint/BlazorCalendarTest.BusinessLibrary.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/BlazorCalendarTest.BusinessLibrary.pdb
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Release/net8.0/ref/BlazorCalendarTest.BusinessLibrary.dll

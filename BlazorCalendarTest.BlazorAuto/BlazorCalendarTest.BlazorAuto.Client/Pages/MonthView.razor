@@ -1,0 +1,11 @@
+@page "/"
+@page "/monthview/{calendarId:int}"
+@rendermode InteractiveAuto
+@using BlazorCalendarTest.BlazorAuto.Client.Components
+
+<MonthlyCalendar CurrentDate="DateTime.Now" CalendarId=@calendarId />
+   
+@code {
+    [Parameter]
+    public int calendarId { get; set; } = 1;
+}

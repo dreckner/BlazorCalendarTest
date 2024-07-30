@@ -1,0 +1,331 @@
+@using System.Globalization
+@using BlazorCalendarTest.BlazorAuto.Client.Components
+
+@inject Csla.IDataPortal<CalendarEdit> calendarDataPortal
+@inject Csla.IDataPortal<EventTypeInfoList> eventTypeInfoListDataPortal
+@inject Csla.IDataPortal<EventSpaceInfoList> eventSpaceInfoListDataPortal
+@inject Csla.Blazor.ViewModel<CalendarEdit> vm
+
+
+@if(eventSpaceInfoList is null)
+{ 
+    <h2>Loading...</h2>
+}
+else
+{
+
+<div class="row">
+    <div class="col-7 border m-3 p-3">
+        <div class="row">
+            <div class="offset-3 col">
+                        <button class="btn" href="#" @onclick="AddEvent">Add Event</button>
+            </div>
+            <div class="col-6">
+                <h4>@vm.Model.Name</h4>
+            </div>
+            <div class="col">
+                        <button class="nav-link" href="#" @onclick="vm.SaveAsync" disabled="@(!vm.Model.IsSavable)">Save</button>
+            </div>
+            <div class="offset-3 col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col">
+                <button class="btn" @onclick="PreviousMonth">@("<==")</button>
+            </div>
+            <div class="col-2">      
+                    <select class="form-select-sm" value=@CurrentDate.Month @onchange="(e)=>MonthChanged(e)">
+                        @for (var month = 1; month <= 12; month++)
+                        {
+                            <option value="@month">@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(month)</option>
+                        }
+                    </select>
+            </div>
+            <div class="col-2">    
+                    <select class="form-select-sm" value=@CurrentDate.Year @onchange="(e)=>YearChanged(e)">
+                        @for (var year = 2021; year <= 2025; year++)
+                        {
+                            <option value="@year">@year</option>
+                        }
+                    </select>
+            </div>
+            <div class="col">
+                    <button class="btn" @onclick="NextMonth">@("==>")</button>
+            </div> 
+            <div class="offset-3 col">
+            </div>
+        </div>
+        <div class="row ">
+            @for (var dayOfWeek = 0; dayOfWeek < 7; dayOfWeek++)
+            {
+                if(dayOfWeek == 0 || dayOfWeek == 6)
+                {
+                    <div class="col-1">
+                        @DaysOfWeek[dayOfWeek]
+                    </div>
+                }
+                else
+                {
+                    <div class="col-2">
+                        @DaysOfWeek[dayOfWeek]
+                    </div>
+                }
+                
+            }
+        </div>
+     @for (var week = 0; week <= 5; week++)
+    {
+        <div class="row ">
+            @for (var day = 0; day <=6; day++)
+            {
+                var dayOfMonth = (week * 7) + day + 1 - firstDayOfMonth;
+                if (dayOfMonth < 1 || dayOfMonth > daysInMonth)
+                {
+                    if(day == 0 || day == 6)
+                    {
+                        <div class="col-1">
+                            &nbsp;
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-2">
+                            &nbsp;
+                        </div>
+                    }
+                }
+                else
+                {
+                    if(day == 0 || day == 6)
+                    {
+                        <div class="col-1" ondragover="event.preventDefault()" @ondrop="@(() => Drop(@dayOfMonth))">
+                            @dayOfMonth
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-2" ondragover="event.preventDefault()" @ondrop="@(() => Drop(@dayOfMonth))">
+                            @dayOfMonth
+                        </div>
+                    }
+                    
+                }
+            }
+        </div>
+        var firstDayOfWeek = (week * 7) + 1 - firstDayOfMonth;
+        var weekEventList = GetWeeksEvents(week);
+        @if(weekEventList.Count == 0)
+        {
+            <div class="row ">
+                <div class="col-7">
+                    &nbsp;
+                </div>
+            </div>
+        }
+        else
+        {
+           
+            @foreach(var eventEdit in weekEventList)
+            {
+            <div class="row ">
+                <div class="@GetEventClass(eventEdit, week)" style="@GetEventStyle(eventEdit)"
+                        draggable="true" ondragstart="@(() => DragStart(eventEdit))" @ondragend="DragEnd"
+                        @onclick="() => SelectEvent(eventEdit)" >
+                        
+                    @eventEdit.Title
+                </div>
+            </div>
+            }
+        
+        }
+
+    } 
+    </div>
+    <div class="col-4 border m-3 p-3">
+        <EventEditor editItem="editItem" eventTypeInfoList="eventTypeInfoList" eventSpaceInfoList="eventSpaceInfoList" />
+    </div>
+</div>
+
+}
+
+
+@code 
+{
+    [Parameter]
+    public DateTime CurrentDate { get; set; } = DateTime.Now;
+    [Parameter]
+    public int CalendarId { get; set; } = 1;
+    
+    // private variables
+    private EventTypeInfoList? eventTypeInfoList { get; set; }
+    private EventSpaceInfoList? eventSpaceInfoList { get; set; }
+
+    private string[] DaysOfWeek = CultureInfo.CurrentCulture.DateTimeFormat.AbbreviatedDayNames;
+
+    private DateTime firstDateOfMonth { get;set; }
+    private int daysInMonth { get;set; }
+    private DateTime lastDateOfMonth { get; set; }
+    private int firstDayOfMonth { get; set; }
+
+    private EventEdit? editItem { get; set; }
+
+
+    private async Task MonthChanged(ChangeEventArgs e)
+    {
+        CurrentDate = new DateTime(CurrentDate.Year, int.Parse(e.Value.ToString()), CurrentDate.Day);
+        await CurrentDateHasChanged();
+    } 
+    private async Task YearChanged(ChangeEventArgs e)
+    {
+        CurrentDate = new DateTime(int.Parse(e.Value.ToString()), CurrentDate.Month, CurrentDate.Day);
+        await CurrentDateHasChanged();
+    }
+    private async Task PreviousMonth()
+    {
+        CurrentDate = CurrentDate.AddMonths(-1);
+        await CurrentDateHasChanged();
+    }
+    private async Task NextMonth()
+    {
+        CurrentDate = CurrentDate.AddMonths(1);
+        await CurrentDateHasChanged();
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        eventTypeInfoList = await eventTypeInfoListDataPortal.FetchAsync();
+        eventSpaceInfoList = await eventSpaceInfoListDataPortal.FetchAsync(CalendarId);
+
+        await CurrentDateHasChanged();
+    }
+    
+    private async Task CurrentDateHasChanged()
+    {
+        firstDateOfMonth = new DateTime(CurrentDate.Year, CurrentDate.Month, 1);
+        daysInMonth = DateTime.DaysInMonth(CurrentDate.Year, CurrentDate.Month);
+        lastDateOfMonth = new DateTime(CurrentDate.Year, CurrentDate.Month, daysInMonth);
+        firstDayOfMonth = (int)firstDateOfMonth.DayOfWeek;
+
+        await vm.RefreshAsync(() => calendarDataPortal.FetchAsync(CalendarId, firstDateOfMonth, lastDateOfMonth));
+    }
+    private List<EventEdit> GetWeeksEvents(int week)
+    {
+        int firstDayNumOfWeek = Math.Max((week * 7) + 1 - firstDayOfMonth, 1);
+        int lastDayNumOfWeek = Math.Min((week * 7) + 7 - firstDayOfMonth, daysInMonth);
+
+        
+        if(firstDayNumOfWeek <= daysInMonth)
+        {
+            DateTime weekStartDate = new DateTime(CurrentDate.Year, CurrentDate.Month, firstDayNumOfWeek);
+            DateTime weekEndDate = new DateTime(CurrentDate.Year, CurrentDate.Month, lastDayNumOfWeek);
+
+            if(vm is null)
+                return new List<EventEdit>();
+
+            var list =  vm.Model.Events.Where(x => (x.StartDate >= weekStartDate || x.EndDate >= weekStartDate) && x.StartDate <= weekEndDate).ToList();
+            
+            if(list is null)
+                return new List<EventEdit>();
+            else
+                return list;
+        }
+        else
+        {
+            return new List<EventEdit>();
+        }
+    }
+    private string GetEventClass(EventEdit eventEdit, int week)
+    {
+        int firstDayNumOfWeek = Math.Max((week * 7) + 1 - firstDayOfMonth, 1);
+        int lastDayNumOfWeek = Math.Min((week * 7) + 7 - firstDayOfMonth, daysInMonth);
+
+        DateTime weekStartDate = new DateTime(CurrentDate.Year, CurrentDate.Month, firstDayNumOfWeek);
+        DateTime weekEndDate = new DateTime(CurrentDate.Year, CurrentDate.Month, lastDayNumOfWeek);
+
+        DateTime eventStartDate = eventEdit.StartDate > weekStartDate ? eventEdit.StartDate : weekStartDate;
+        DateTime eventEndDate = eventEdit.EndDate < weekEndDate ? eventEdit.EndDate : weekEndDate;
+
+        int offset = 0;
+        int length = 0;
+
+
+
+        if(eventStartDate.DayOfWeek == DayOfWeek.Saturday)
+            offset = 11;
+        else
+            offset =  ((int)eventStartDate.DayOfWeek - 1) * 2 + 1;
+
+
+        if(eventEndDate.DayOfWeek == DayOfWeek.Saturday)
+            length = (((int)eventEndDate.DayOfWeek - (int)eventStartDate.DayOfWeek) * 2) + 1;
+        else
+            length = (((int)eventEndDate.DayOfWeek - (int)eventStartDate.DayOfWeek) * 2) + 1;
+        
+        return $"offset-{offset} col-{length}";
+    }
+    private string GetEventStyle(EventEdit eventEdit)
+    {
+        if(eventTypeInfoList is null)
+            return string.Empty;
+        
+        var eventTypeInfo = eventTypeInfoList.Where(x => x.Id == eventEdit.EventTypeId).FirstOrDefault();
+
+        if(eventTypeInfo is null)
+            return string.Empty;
+        
+        string retVal = string.Empty;
+        if(eventEdit.Status == EventStatus.OnHold)
+        {
+            retVal = eventTypeInfo.HoldStyle;
+        }
+        else if(eventEdit.Status == EventStatus.Booked)
+        {
+            retVal = eventTypeInfo.BookedStyle;
+        }
+        
+        return retVal;        
+    }
+
+    // Drag and Drop
+    private EventEdit? dragEvent;
+
+    private void DragStart(EventEdit eventEdit)
+    {
+        dragEvent = eventEdit;
+    }
+    private void DragEnd()
+    {
+        dragEvent = null;
+    }
+    private void Drop(int dayOfMonth)
+    {
+        if(dragEvent is null)
+            return;
+           
+        TimeSpan eventLength = dragEvent.EndDate - dragEvent.StartDate;
+        DateTime newStartDate = new DateTime(CurrentDate.Year, CurrentDate.Month, dayOfMonth);
+        DateTime newEndDate = newStartDate.AddDays(eventLength.Days);
+        dragEvent.StartDate = newStartDate;
+        dragEvent.EndDate = newEndDate;
+        
+        StateHasChanged();
+    }
+    private void SelectEvent(EventEdit eventEdit)
+    {
+        editItem = eventEdit;
+
+    }
+    private async Task Save()
+    {
+        await vm.SaveAsync();
+    }
+    private async Task Cancel()
+    {
+        await vm.RefreshAsync(() => calendarDataPortal.FetchAsync(CalendarId, firstDateOfMonth, lastDateOfMonth));
+    }
+    private void AddEvent()
+    {
+        editItem = vm.Model.Events.AddNew();
+        editItem.StartDate = firstDateOfMonth;
+        editItem.EndDate = lastDateOfMonth;
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Release/net8.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Release/net8.0/compressed/546uf3e3jp.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/wwwroot/appsettings.Development.json",
+      "PackagePath": "staticwebassets/appsettings.Development.json"
+    },
+    {
+      "Id": "/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/wwwroot/appsettings.json",
+      "PackagePath": "staticwebassets/appsettings.json"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.BlazorCalendarTest.BlazorAuto.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.build.BlazorCalendarTest.BlazorAuto.Client.props",
+      "PackagePath": "build\\BlazorCalendarTest.BlazorAuto.Client.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.BlazorCalendarTest.BlazorAuto.Client.props",
+      "PackagePath": "buildMultiTargeting\\BlazorCalendarTest.BlazorAuto.Client.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.BlazorCalendarTest.BlazorAuto.Client.props",
+      "PackagePath": "buildTransitive\\BlazorCalendarTest.BlazorAuto.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

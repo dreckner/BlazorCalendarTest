@@ -1,0 +1,57 @@
+@page "/calendaredit"
+@page "/calendaredit/{id:int}"
+@rendermode InteractiveAuto
+
+@inject Csla.IDataPortal<CalendarEdit> calendarEditDataPortal
+@inject Csla.Blazor.ViewModel<CalendarEdit> vm
+
+@inject Csla.IDataPortal<EventSpaceInfoList> eventSpaceInfoListDataPortal
+@inject Csla.IDataPortal<EventSpaceEdit> eventSpaceEditDataPortal
+
+
+<h3>New Calendar</h3>
+<p class="text-danger">@vm.ViewModelErrorText</p>
+@if(vm.Model is null)
+{
+    <h2>Loading...</h2>
+}
+else
+{
+<form>
+    <div class="form-group">
+        <label for="id">Id</label>
+        <input type="text" class="form-control" id="id" @bind="vm.Model.Id" readonly/>
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" @bind="vm.Model.Name" />
+    </div>
+    <div class="form-group">
+        <input type="checkbox" class="form-check-input" @bind="vm.Model.Active"  />
+        <label for="active" class="form-check-label">Active</label>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3" @onclick="vm.SaveAsync">Save</button>
+</form>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+    private EventSpaceInfoList? eventSpaceInfoList { get; set; }
+    private EventSpaceEdit? eventSpaceEdit { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        vm.ModelPropertyChanged += async (o, e) => await InvokeAsync(() => StateHasChanged());
+
+        if (Id.HasValue)
+        {
+            await vm.RefreshAsync(() => calendarEditDataPortal.FetchAsync(Id.Value));
+        }
+        else
+        {
+            await vm.RefreshAsync(() => calendarEditDataPortal.CreateAsync());
+        }
+        
+    }
+   
+}

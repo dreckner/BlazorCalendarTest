@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/BlazorCalendarTest.BlazorAuto.Client.props" />
+</Project>
