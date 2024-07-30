@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8a59d591-a635-49ee-b7c9-700aed6500cf/resourceGroups/MonthlyCalendarDemo_group/providers/Microsoft.Web/sites/MonthlyCalendarDemo",
+    "appService.deploySubpath": "BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/bin/Debug/net8.0"
+}
