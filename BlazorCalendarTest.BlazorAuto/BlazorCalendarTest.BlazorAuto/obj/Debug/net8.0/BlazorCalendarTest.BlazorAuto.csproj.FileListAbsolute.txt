@@ -92,3 +92,4 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.genruntimeconfig.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/ref/BlazorCalendarTest.BlazorAuto.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.sourcelink.json

@@ -15,3 +15,4 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/refint/BlazorCalendarTest.BusinessLibrary.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/ref/BlazorCalendarTest.BusinessLibrary.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.sourcelink.json

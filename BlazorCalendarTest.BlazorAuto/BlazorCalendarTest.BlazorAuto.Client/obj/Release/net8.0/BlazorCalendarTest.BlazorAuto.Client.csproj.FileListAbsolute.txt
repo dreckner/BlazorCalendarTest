@@ -1258,3 +1258,4 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Release/net8.0/refint/BlazorCalendarTest.BlazorAuto.Client.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Release/net8.0/BlazorCalendarTest.BlazorAuto.Client.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Release/net8.0/ref/BlazorCalendarTest.BlazorAuto.Client.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Release/net8.0/BlazorCalendarTest.BlazorAuto.Client.sourcelink.json

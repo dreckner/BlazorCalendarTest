@@ -9,3 +9,4 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/refint/BlazorCalendarTest.Dal.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/ref/BlazorCalendarTest.Dal.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.sourcelink.json

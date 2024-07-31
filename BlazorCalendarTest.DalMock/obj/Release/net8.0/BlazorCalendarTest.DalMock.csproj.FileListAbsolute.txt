@@ -13,3 +13,4 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Release/net8.0/refint/BlazorCalendarTest.DalMock.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Release/net8.0/BlazorCalendarTest.DalMock.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Release/net8.0/ref/BlazorCalendarTest.DalMock.dll
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock/obj/Release/net8.0/BlazorCalendarTest.DalMock.sourcelink.json

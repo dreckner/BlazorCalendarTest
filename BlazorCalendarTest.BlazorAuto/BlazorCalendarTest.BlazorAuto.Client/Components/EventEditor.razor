@@ -81,5 +81,22 @@
     [Parameter]
     public EventSpaceInfoList? eventSpaceInfoList { get; set; }
     
-
+    [Parameter]
+    public EventCallback<EventEdit> EventChanged { get; set; }
+    
+    @* protected override void OnInitialized()
+    {
+        if(editItem != null)
+            editItem.PropertyChanged += async (s,e) => await InvokeAsync(() => OnEventChanged());
+        
+    } *@
+    protected override void OnParametersSet()
+    {
+        if(editItem != null)
+            editItem.PropertyChanged += async (s,e) => await InvokeAsync(() => OnEventChanged());
+    }
+    void OnEventChanged()
+    {
+        EventChanged.InvokeAsync(editItem);
+    }
 }

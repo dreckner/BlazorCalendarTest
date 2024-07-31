@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorCalendarTest.DalMock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34c3f8fd17fe01044d4499e4377f859b941a1389")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorCalendarTest.DalMock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorCalendarTest.DalMock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

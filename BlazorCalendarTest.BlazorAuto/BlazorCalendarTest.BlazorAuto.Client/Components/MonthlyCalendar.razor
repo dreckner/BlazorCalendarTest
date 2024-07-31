@@ -18,20 +18,20 @@ else
     <div class="col-7 border m-3 p-3">
         <div class="row">
             <div class="offset-3 col">
-                        <button class="btn" href="#" @onclick="AddEvent">Add Event</button>
+                        <button class="btn" href="#" @onclick="AddEvent"><i class="fa-light fa-plus"></i></button>
             </div>
-            <div class="col-6">
+            <div class="col-4 text-center">
                 <h4>@vm.Model.Name</h4>
             </div>
             <div class="col">
-                        <button class="nav-link" href="#" @onclick="vm.SaveAsync" disabled="@(!vm.Model.IsSavable)">Save</button>
+                        <button  href="#" @onclick="vm.SaveAsync" disabled="@(!vm.Model.IsSavable)"><i class="fa-light fa-floppy-disk"></i></button>
             </div>
             <div class="offset-3 col">
             </div>
         </div>
         <div class="row">
             <div class="offset-3 col">
-                <button class="btn" @onclick="PreviousMonth">@("<==")</button>
+                <button class="btn" @onclick="PreviousMonth"><i class="fa-light fa-backward"></i></button>
             </div>
             <div class="col-2">      
                     <select class="form-select-sm" value=@CurrentDate.Month @onchange="(e)=>MonthChanged(e)">
@@ -50,7 +50,7 @@ else
                     </select>
             </div>
             <div class="col">
-                    <button class="btn" @onclick="NextMonth">@("==>")</button>
+                    <button class="btn" @onclick="NextMonth"><i class="fa-light fa-forward"></i></button>
             </div> 
             <div class="offset-3 col">
             </div>
@@ -142,7 +142,7 @@ else
     } 
     </div>
     <div class="col-4 border m-3 p-3">
-        <EventEditor editItem="editItem" eventTypeInfoList="eventTypeInfoList" eventSpaceInfoList="eventSpaceInfoList" />
+        <EventEditor editItem="editItem" eventTypeInfoList="eventTypeInfoList" eventSpaceInfoList="eventSpaceInfoList" EventChanged="OnEventChanged" />
     </div>
 </div>
 
@@ -189,6 +189,10 @@ else
     {
         CurrentDate = CurrentDate.AddMonths(1);
         await CurrentDateHasChanged();
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        vm.ModelPropertyChanged += async (s, e) => await InvokeAsync(() => StateHasChanged());
     }
     protected override async Task OnParametersSetAsync()
     {
@@ -327,5 +331,9 @@ else
         editItem = vm.Model.Events.AddNew();
         editItem.StartDate = firstDateOfMonth;
         editItem.EndDate = lastDateOfMonth;
+    }
+    private void OnEventChanged()
+    {
+        StateHasChanged();
     }
 }
