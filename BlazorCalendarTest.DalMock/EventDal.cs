@@ -22,7 +22,6 @@ namespace BlazorCalendarTest.DalMock
                     StartDate = e.StartDate,
                     EndDate = e.EndDate,
                     Status = e.Status,
-                    EventTypeId = e.EventTypeId,
                     EventSpaceId = e.EventSpaceId
                 })
                 .FirstOrDefault();

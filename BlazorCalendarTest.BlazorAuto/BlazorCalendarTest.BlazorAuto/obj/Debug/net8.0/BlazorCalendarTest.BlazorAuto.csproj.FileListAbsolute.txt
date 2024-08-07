@@ -78,6 +78,7 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.csproj.CoreCompileInputs.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.MvcApplicationPartsAssemblyInfo.cs
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.MvcApplicationPartsAssemblyInfo.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/staticwebassets.build.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/staticwebassets.development.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/staticwebassets/msbuild.BlazorCalendarTest.BlazorAuto.Microsoft.AspNetCore.StaticWebAssets.props
@@ -92,4 +93,3 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.genruntimeconfig.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/ref/BlazorCalendarTest.BlazorAuto.dll
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.sourcelink.json

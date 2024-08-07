@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorCalendarTest.BlazorAuto.Client",
   "resources": {
-    "hash": "sha256-ds6k6SaG18KDTbUSqJ5RaBuQW+Su2ZVVaHkeFMwm4ic=",
+    "hash": "sha256-5eBkL39FHLJC+nn1dhD12zt7kMNY2aAJeMzgSFPckZM=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.bkixchwivj.js": "sha256-YU6M9+jtDVnB8/wtrgIndOstzNh778Ls8g9XnbjorSk="
     },
@@ -17,10 +17,10 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "BlazorCalendarTest.BlazorAuto.Client.wasm": "sha256-tOt48kc9/83PagejNb82yaJPcqzEzCsn7N0G+QObw6E=",
-      "BlazorCalendarTest.BusinessLibrary.wasm": "sha256-YOPtblAXW80Y+WQ21s10pxZwQvOJ7krBPn/RCHklfK8=",
-      "BlazorCalendarTest.Dal.wasm": "sha256-NBtULJrtZD+suOteAufCl3l8KunLRacHJV/ZDrtWj6g=",
-      "BlazorCalendarTest.DalMock.wasm": "sha256-l36MUBTTP886LdihhhvNoxV4h/pSc/DuCCsP03ZCkSw=",
+      "BlazorCalendarTest.BlazorAuto.Client.wasm": "sha256-ktJrxeHFPxsKL15sLIZPs8ETSb9Ma40PpjGBHA1Ex9A=",
+      "BlazorCalendarTest.BusinessLibrary.wasm": "sha256-k98/d5VXXadwjtZZBwH7LcLj6Z8t/O5Xg9JlkAHL08c=",
+      "BlazorCalendarTest.Dal.wasm": "sha256-E1iA11HzrU0WibbtialG+6bEY6kevdqg1XywT98OrIw=",
+      "BlazorCalendarTest.DalMock.wasm": "sha256-R8B6MX/reaI+N5x8BTth8bKrtX7sRL/dwaaLXgZ0DX0=",
       "BootstrapBlazor.wasm": "sha256-M8VPU8J9sae/AwBzSTU3bdSjMj4G8m7iVOLJRlDQa+E=",
       "Csla.Blazor.wasm": "sha256-39BfyGD22PLkqs4zbWpY3uSAAlq4x5h7Wc+xX5prbzI=",
       "Csla.Blazor.WebAssembly.wasm": "sha256-PDuMir0FcVu7RHbT9gWEp0dzoEib+onT/N7DXRA+IdA=",

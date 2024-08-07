@@ -1,3 +1,10 @@
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.csproj.AssemblyReference.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.GeneratedMSBuildEditorConfig.editorconfig
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.AssemblyInfoInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.AssemblyInfo.cs
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.MvcApplicationPartsAssemblyInfo.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/wwwroot/_framework/ar/Csla.resources.wasm
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/wwwroot/_framework/blazor.boot.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/wwwroot/_framework/blazor.webassembly.js
@@ -750,12 +757,6 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/BlazorCalendarTest.Dal.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/bin/Debug/net8.0/BlazorCalendarTest.DalMock.pdb
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.csproj.AssemblyReference.cache
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.GeneratedMSBuildEditorConfig.editorconfig
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.AssemblyInfoInputs.cache
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.AssemblyInfo.cs
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.csproj.CoreCompileInputs.cache
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.MvcApplicationPartsAssemblyInfo.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/webcil/BootstrapBlazor.wasm
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/webcil/Csla.wasm
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/webcil/Csla.Blazor.wasm
@@ -1258,4 +1259,3 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/refint/BlazorCalendarTest.BlazorAuto.Client.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/ref/BlazorCalendarTest.BlazorAuto.Client.dll
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BlazorAuto/BlazorCalendarTest.BlazorAuto.Client/obj/Debug/net8.0/BlazorCalendarTest.BlazorAuto.Client.sourcelink.json

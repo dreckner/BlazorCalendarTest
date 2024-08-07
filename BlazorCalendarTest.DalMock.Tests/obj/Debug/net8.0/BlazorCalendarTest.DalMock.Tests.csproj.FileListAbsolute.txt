@@ -4,6 +4,7 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/obj/Debug/net8.0/BlazorCalendarTest.DalMock.Tests.AssemblyInfoInputs.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/obj/Debug/net8.0/BlazorCalendarTest.DalMock.Tests.AssemblyInfo.cs
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/obj/Debug/net8.0/BlazorCalendarTest.DalMock.Tests.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/obj/Debug/net8.0/BlazorCalendarTest.DalMock.Tests.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.DalMock.Tests/bin/Debug/net8.0/nunit.engine.dll

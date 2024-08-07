@@ -37,7 +37,6 @@ namespace BlazorCalendarTest.BusinessLibrary.Tests
             c.Organizer = "Test Organizer";
             c.StartDate = DateTime.Now;
             c.EndDate = DateTime.Now.AddHours(1);
-            c.EventTypeId = 1;
             c = c.Save();
             var c2 = dp.Fetch(c.Id);
 

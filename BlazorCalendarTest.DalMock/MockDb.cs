@@ -12,17 +12,18 @@ namespace BlazorCalendarTest.DalMock
         public static List<EventData> Events { get; set; } = new List<EventData>();
         public static List<EventTypeData> EventTypes { get; set; } = new List<EventTypeData>();
         public static List<EventSpaceData> EventSpaces { get; set; } = new List<EventSpaceData>();
-
+        
 
         static MockDb()
         {
-            Calendars.Add(new CalendarData { Id = 0, Name = "Default Calendar", Active = true });
+            Calendars.Add(new CalendarData { Id = 0, Name = "Calendar 0", Active = true });
             Calendars.Add(new CalendarData { Id = 1, Name = "Calendar 1", Active = true });
             Calendars.Add(new CalendarData { Id = 2, Name = "Calendar 2", Active = false });
 
+            var eventId0 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId0,
                 CalendarId = 0,
                 Title = "Event 0",
                 Description = "Description of Event 0",
@@ -31,12 +32,12 @@ namespace BlazorCalendarTest.DalMock
                 Organizer = "Organizer 0",
                 Status = 0,
                 EventTypeId = 1,
-                EventSpaceId = 0
+                EventSpaceId = 1
             });
-
+            var eventId1 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId1,
                 CalendarId = 0,
                 Title = "Event 00",
                 Description = "Description of Event 00",
@@ -44,27 +45,27 @@ namespace BlazorCalendarTest.DalMock
                 EndDate = DateTime.Now.AddDays(4),
                 Organizer = "Organizer 00",
                 Status = 1,
-                EventTypeId = 2,
+                EventTypeId = 1,
                 EventSpaceId = 1
             });
-
+            var eventId2 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId2,
                 CalendarId = 0,
                 Title = "Event 000",
                 Description = "Description of Event 000",
-                StartDate = DateTime.Now,
+                StartDate = DateTime.Now.Date,
                 EndDate = DateTime.Now.AddDays(3),
                 Organizer = "Organizer 000",
                 Status = 0,
-                EventTypeId = 3,
+                EventTypeId = 1,
                 EventSpaceId = 2
             });
-
+            var eventId3 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId3,
                 CalendarId = 1,
                 Title = "Event 1",
                 Description = "Description of Event 1",                
@@ -72,35 +73,35 @@ namespace BlazorCalendarTest.DalMock
                 EndDate = DateTime.Now.AddDays(14),
                 Organizer = "Organizer 1",   
                 Status = 1,
-                EventTypeId = 1,
+                EventTypeId = 2,
                 EventSpaceId = 1             
             });
-
+            var eventId4 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId4,
                 CalendarId = 1,
-                Title = "Event 2",                
-                Description = "Description of Event 2",
-                StartDate = DateTime.Now,
+                Title = "Event 11",                
+                Description = "Description of Event 11",
+                StartDate = DateTime.Now.Date,
                 EndDate = DateTime.Now.AddDays(2),
                 Organizer = "Organizer 2",
                 Status = 1,
-                EventTypeId = 2,
+                EventTypeId = 3,
                 EventSpaceId = 2
             });
-
+            var eventId5 = Guid.NewGuid();
             Events.Add(new EventData
             {
-                Id = Guid.NewGuid(),
+                Id = eventId5,
                 CalendarId = 2,
-                Title = "Event 3",
-                Description = "Description of Event 3",
-                StartDate = DateTime.Now,
+                Title = "Event 2",
+                Description = "Description of Event 2",
+                StartDate = DateTime.Now.Date,
                 EndDate = DateTime.Now.AddDays(7),
                 Organizer = "Organizer 3", 
                 Status = 0,
-                EventTypeId = 3,
+                EventTypeId = 1,
                 EventSpaceId = 3               
             });
 

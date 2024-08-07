@@ -4,6 +4,7 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.Tests.AssemblyInfoInputs.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.Tests.AssemblyInfo.cs
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.Tests.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.Tests.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/bin/Debug/net8.0/NUnit3.TestAdapter.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary.Tests/bin/Debug/net8.0/nunit.engine.dll

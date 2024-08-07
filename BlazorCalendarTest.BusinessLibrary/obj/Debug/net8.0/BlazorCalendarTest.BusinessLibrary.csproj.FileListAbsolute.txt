@@ -10,9 +10,9 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.AssemblyInfoInputs.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.AssemblyInfo.cs
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCa.C6CEC8D7.Up2Date
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/refint/BlazorCalendarTest.BusinessLibrary.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/ref/BlazorCalendarTest.BusinessLibrary.dll
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.BusinessLibrary/obj/Debug/net8.0/BlazorCalendarTest.BusinessLibrary.sourcelink.json

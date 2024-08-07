@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BlazorCalendarTest.BlazorAuto.Client",
   "resources": {
-    "hash": "sha256-z+BUsaJ1Brlu9kWeaKauhXcP39C1QLXhs8HH0YM2oVI=",
+    "hash": "sha256-GTZB0Qf5hnYccHDL37MfqhWM0HT0CbeTlLn5p7yFqG4=",
     "jsModuleNative": {
       "dotnet.native.8.0.6.bkixchwivj.js": "sha256-YU6M9+jtDVnB8/wtrgIndOstzNh778Ls8g9XnbjorSk="
     },
@@ -222,16 +222,16 @@
       "mscorlib.wasm": "sha256-masKveCdoRSahF99doEQk7H3YN2wHLVIE4M/Zu8OoD8=",
       "netstandard.wasm": "sha256-z1EJOmgVhSpTopn7Tek/0P//MKGF1I3NUD/sh4oLnwY=",
       "System.Private.CoreLib.wasm": "sha256-tuIWpR30u0OoEVtv4pXZ47mEpI2AmFBIyYFPnqDZZfw=",
-      "BlazorCalendarTest.BusinessLibrary.wasm": "sha256-YOPtblAXW80Y+WQ21s10pxZwQvOJ7krBPn/RCHklfK8=",
-      "BlazorCalendarTest.Dal.wasm": "sha256-NBtULJrtZD+suOteAufCl3l8KunLRacHJV/ZDrtWj6g=",
-      "BlazorCalendarTest.DalMock.wasm": "sha256-l36MUBTTP886LdihhhvNoxV4h/pSc/DuCCsP03ZCkSw=",
-      "BlazorCalendarTest.BlazorAuto.Client.wasm": "sha256-tOt48kc9/83PagejNb82yaJPcqzEzCsn7N0G+QObw6E="
+      "BlazorCalendarTest.BusinessLibrary.wasm": "sha256-k98/d5VXXadwjtZZBwH7LcLj6Z8t/O5Xg9JlkAHL08c=",
+      "BlazorCalendarTest.Dal.wasm": "sha256-E1iA11HzrU0WibbtialG+6bEY6kevdqg1XywT98OrIw=",
+      "BlazorCalendarTest.DalMock.wasm": "sha256-R8B6MX/reaI+N5x8BTth8bKrtX7sRL/dwaaLXgZ0DX0=",
+      "BlazorCalendarTest.BlazorAuto.Client.wasm": "sha256-ktJrxeHFPxsKL15sLIZPs8ETSb9Ma40PpjGBHA1Ex9A="
     },
     "pdb": {
-      "BlazorCalendarTest.BusinessLibrary.pdb": "sha256-WPUhY8WhVYa4ET2sS2L+aA/eItGxfWvjdqgiDLANO24=",
-      "BlazorCalendarTest.Dal.pdb": "sha256-HEynPaEhHpPMOVGnMBpeQvwh0ljkSvbTVguRz4/P0No=",
-      "BlazorCalendarTest.DalMock.pdb": "sha256-LlbC/WGArj+pNDCAv1G2oGNLAO7ozYV6egim2TmeugU=",
-      "BlazorCalendarTest.BlazorAuto.Client.pdb": "sha256-CI3+NRnoGrqt/5B3pXK2ta63zUb9YXbK8B4bwFV3lpI="
+      "BlazorCalendarTest.BusinessLibrary.pdb": "sha256-DaFLz5ECXDDpxnc/hdAuwMk/4onuvLkUWZKTe2F128Q=",
+      "BlazorCalendarTest.Dal.pdb": "sha256-xGyYz5udZfYi8oLMy44SZeTQRwuTjVCCD6Lzsi13xW4=",
+      "BlazorCalendarTest.DalMock.pdb": "sha256-Qurl76vxBM029ri1aPr9T9z5MjtSg1f5LkfWXRGg1dY=",
+      "BlazorCalendarTest.BlazorAuto.Client.pdb": "sha256-tmZ4CJ5d5rR5ppmfMk1Xs6odi/QZP0bKSNqkNRfkxUI="
     },
     "satelliteResources": {
       "ar": {

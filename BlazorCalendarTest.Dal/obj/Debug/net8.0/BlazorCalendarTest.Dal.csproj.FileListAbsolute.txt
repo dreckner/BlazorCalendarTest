@@ -5,8 +5,8 @@
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.AssemblyInfoInputs.cache
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.AssemblyInfo.cs
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.csproj.CoreCompileInputs.cache
+/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.sourcelink.json
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/refint/BlazorCalendarTest.Dal.dll
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.pdb
 /home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/ref/BlazorCalendarTest.Dal.dll
-/home/davidreckner/source/BlazorCalendarTest/BlazorCalendarTest.Dal/obj/Debug/net8.0/BlazorCalendarTest.Dal.sourcelink.json

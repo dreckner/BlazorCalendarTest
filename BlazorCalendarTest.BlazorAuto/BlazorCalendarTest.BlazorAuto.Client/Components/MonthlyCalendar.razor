@@ -4,6 +4,8 @@
 @inject Csla.IDataPortal<CalendarEdit> calendarDataPortal
 @inject Csla.IDataPortal<EventTypeInfoList> eventTypeInfoListDataPortal
 @inject Csla.IDataPortal<EventSpaceInfoList> eventSpaceInfoListDataPortal
+@inject Csla.IDataPortal<CalendarInfoList> calendarInfoListDataPortal
+
 @inject Csla.Blazor.ViewModel<CalendarEdit> vm
 
 
@@ -21,7 +23,12 @@ else
                         <button class="btn" href="#" @onclick="AddEvent"><i class="fa-light fa-plus"></i></button>
             </div>
             <div class="col-4 text-center">
-                <h4>@vm.Model.Name</h4>
+                <select value=@vm.Model.Id @onchange=@((e)=>CalendarChanged(e))>
+                    @foreach(var calendarInfo in calendarInfoList)
+                    {
+                        <option value="@calendarInfo.Id">@calendarInfo.Name</option>
+                    }
+                </select>
             </div>
             <div class="col">
                         <button  href="#" @onclick="vm.SaveAsync" disabled="@(!vm.Model.IsSavable)"><i class="fa-light fa-floppy-disk"></i></button>
@@ -159,6 +166,7 @@ else
     // private variables
     private EventTypeInfoList? eventTypeInfoList { get; set; }
     private EventSpaceInfoList? eventSpaceInfoList { get; set; }
+    private CalendarInfoList? calendarInfoList { get; set; }
 
     private string[] DaysOfWeek = CultureInfo.CurrentCulture.DateTimeFormat.AbbreviatedDayNames;
 
@@ -198,6 +206,7 @@ else
     {
         eventTypeInfoList = await eventTypeInfoListDataPortal.FetchAsync();
         eventSpaceInfoList = await eventSpaceInfoListDataPortal.FetchAsync(CalendarId);
+        calendarInfoList = await calendarInfoListDataPortal.FetchAsync();
 
         await CurrentDateHasChanged();
     }
@@ -210,6 +219,7 @@ else
         firstDayOfMonth = (int)firstDateOfMonth.DayOfWeek;
 
         await vm.RefreshAsync(() => calendarDataPortal.FetchAsync(CalendarId, firstDateOfMonth, lastDateOfMonth));
+        StateHasChanged();
     }
     private List<EventEdit> GetWeeksEvents(int week)
     {
@@ -336,4 +346,10 @@ else
     {
         StateHasChanged();
     }
+    private void CalendarChanged(ChangeEventArgs e)
+    {
+        CalendarId = int.Parse(e.Value.ToString());
+        //CurrentDate = new DateTime(CurrentDate.Year, CurrentDate.Month, 1);
+        CurrentDateHasChanged();
+    }   
 }

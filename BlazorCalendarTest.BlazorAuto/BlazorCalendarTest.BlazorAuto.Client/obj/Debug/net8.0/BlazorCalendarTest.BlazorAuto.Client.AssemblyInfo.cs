@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorCalendarTest.BlazorAuto.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34c3f8fd17fe01044d4499e4377f859b941a1389")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d731827544989c299b02aef5e1c21c26c6309524")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorCalendarTest.BlazorAuto.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorCalendarTest.BlazorAuto.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

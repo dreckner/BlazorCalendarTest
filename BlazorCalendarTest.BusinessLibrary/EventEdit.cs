@@ -88,12 +88,14 @@ namespace BlazorCalendarTest.BusinessLibrary
         private void CreateChild()
         {
             LoadProperty(IdProperty, Guid.NewGuid());
+          
         }
         [Fetch]
         private void Fetch(Guid id, [Inject] IEventDal dal)
         {
             var data = dal.Fetch(id);
             LoadData(data);
+            
         }
         private void LoadData(EventDto data)
         {
@@ -134,6 +136,7 @@ namespace BlazorCalendarTest.BusinessLibrary
                 EventSpaceId = EventSpaceId
             };
             dal.Insert(data);
+            
         }
         [InsertChild]
         private void InsertChild(int calendarId, [Inject] IEventDal dal)
@@ -152,6 +155,7 @@ namespace BlazorCalendarTest.BusinessLibrary
                 EventSpaceId = EventSpaceId
             };
             dal.Insert(data);
+          
         }
         [Update]
         [UpdateChild]
@@ -172,6 +176,7 @@ namespace BlazorCalendarTest.BusinessLibrary
 
             };
             dal.Update(data);
+            
         }
         [Delete]
         private void Delete(Guid id, [Inject] IEventDal dal)
